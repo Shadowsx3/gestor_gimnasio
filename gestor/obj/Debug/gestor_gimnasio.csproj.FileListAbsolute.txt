@@ -1,0 +1,10 @@
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\bin\Debug\gestor_gimnasio.exe.config
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\bin\Debug\gestor_gimnasio.exe
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\bin\Debug\gestor_gimnasio.pdb
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\obj\Debug\gestor_gimnasio.csproj.AssemblyReference.cache
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\obj\Debug\gestor_gimnasio.Form1.resources
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\obj\Debug\gestor_gimnasio.Properties.Resources.resources
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\obj\Debug\gestor_gimnasio.csproj.GenerateResource.cache
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\obj\Debug\gestor_gimnasio.csproj.CoreCompileInputs.cache
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\obj\Debug\gestor_gimnasio.exe
+C:\Users\manue\workspace\gestor_gimnasio\gestor_gimnasio\gestor\obj\Debug\gestor_gimnasio.pdb
