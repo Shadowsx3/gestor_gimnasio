@@ -356,7 +356,7 @@ namespace gestor_gimnasio
             this.groupBox3.Controls.Add(this.dgvClientes);
             this.groupBox3.Location = new System.Drawing.Point(12, 288);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(673, 213);
+            this.groupBox3.Size = new System.Drawing.Size(691, 213);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Buscador de deudas";
