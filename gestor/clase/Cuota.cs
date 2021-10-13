@@ -8,11 +8,11 @@ namespace gestor_gimnasio.clase
 {
     class Cuota
     {
-        private uint _monto;
+        private int _monto;
         private DateTime _fecha;
         private bool _pendiente;
 
-        public uint Monto
+        public int Monto
         {
             get => _monto;
             set => _monto = value;

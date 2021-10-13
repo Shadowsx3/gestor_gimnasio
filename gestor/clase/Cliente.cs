@@ -9,7 +9,7 @@ namespace gestor_gimnasio.clase
     class Cliente
     {
         #region "Clase"
-        private uint _idSocio;
+        private int _idSocio;
         private string _nombre;
         private string _apellido;
         private float _peso;
@@ -22,7 +22,7 @@ namespace gestor_gimnasio.clase
             get => _ultimoEjercicio;
             set => _ultimoEjercicio = value;
         }
-        private List<Cuota> _cuotas;
+        private List<Cuota> _cuotas = new List<Cuota>();
 
         public List<Cuota> Cuotas
         {
@@ -30,7 +30,7 @@ namespace gestor_gimnasio.clase
             set => _cuotas = value;
         }
 
-        public uint IdSocio
+        public int IdSocio
         {
             get => _idSocio;
             set => _idSocio = value;
@@ -66,7 +66,7 @@ namespace gestor_gimnasio.clase
             set => _deuda = value;
         }
 
-        public Cliente(uint xidSocio, string xnombre, string xapellido, float xpeso, float xaltura)
+        public Cliente(int xidSocio, string xnombre, string xapellido, float xpeso, float xaltura)
         {
             IdSocio = xidSocio;
             Nombre = xnombre;
@@ -77,35 +77,40 @@ namespace gestor_gimnasio.clase
         }
         #endregion
         #region "Funciones"
-
-        public void PagarCuota(ushort mes)
-        {
-            if (1 > mes || mes > 12)
-            {
-                return;
-            }
-            foreach (Cuota c in Cuotas)
-            {
-                if (c.Fecha.Month == mes && c.Fecha.Year == DateTime.Now.Year)
-                {
-                    c.Pendiente = false;
-                }
-            }
-        }
+        
         public void PagarCuota(DateTime fecha)
         {
             foreach (Cuota c in Cuotas)
             {
-                if (c.Fecha == fecha)
+                if (c.Fecha.Month == fecha.Month && c.Fecha.Year == fecha.Year)
                 {
                     c.Pendiente = false;
                 }
             }
         }
+        public void AddCuota(DateTime fecha, int Monto)
+        {
+            Cuota cu = new Cuota
+            {
+                Monto = Monto,
+                Pendiente = true,
+                Fecha = fecha
+            };
+            foreach (Cuota c in Cuotas)
+            {
+                if (c.Fecha.Month == fecha.Month && c.Fecha.Year == fecha.Year)
+                {
+                    c.Pendiente = true;
+                    c.Monto = Monto;
+                    return;
+                }
+            }
+            Cuotas.Add(cu);
+        }
 
         public float Imc()
         {
-            return Peso * (Altura * Altura);
+            return Peso / (Altura * Altura);
         }
 
         public void CambiarPeso(float nuevoPeso)
