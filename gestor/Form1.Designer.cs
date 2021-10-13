@@ -464,11 +464,7 @@ namespace gestor_gimnasio
             this.groupBox3.Controls.Add(this.dgvClientes);
             this.groupBox3.Location = new System.Drawing.Point(12, 317);
             this.groupBox3.Name = "groupBox3";
-<<<<<<< Updated upstream
             this.groupBox3.Size = new System.Drawing.Size(691, 213);
-=======
-            this.groupBox3.Size = new System.Drawing.Size(691, 184);
->>>>>>> Stashed changes
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Buscador de deudas";
